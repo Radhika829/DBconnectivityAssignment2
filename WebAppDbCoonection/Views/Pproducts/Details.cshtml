@@ -1,0 +1,50 @@
+﻿@model WebAppDbCoonection.Models.Pproduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pproduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PMfgDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PMfgDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PExpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PExpDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

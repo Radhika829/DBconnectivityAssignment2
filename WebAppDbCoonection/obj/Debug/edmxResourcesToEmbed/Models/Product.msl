@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PProductsDBModelStoreContainer" CdmEntityContainer="PProductsDBEntities3">
+    <EntitySetMapping Name="Pproducts">
+      <EntityTypeMapping TypeName="PProductsDBModel.Pproduct">
+        <MappingFragment StoreEntitySet="Pproduct">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="Pname" ColumnName="Pname" />
+          <ScalarProperty Name="PPrice" ColumnName="PPrice" />
+          <ScalarProperty Name="PMfgDate" ColumnName="PMfgDate" />
+          <ScalarProperty Name="PExpDate" ColumnName="PExpDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
